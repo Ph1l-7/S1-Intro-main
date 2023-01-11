@@ -41,19 +41,18 @@
             <input type="number" id="valeur">
         </div>
         <div id="box1" class="d-grid gap-2">
-            <button>Ajouter</button>
+            <button onclick="ajouter()">Ajouter</button>
             <br>
             <button>Annuler</button>
         </div>
     </div>
     <div id="pt2">
         <h3>Ma liste</h3>
-        <p class="list">
+         <p class="list"  id="maListe">
         <p>Crocs des fêtes : <span>14$</span></p>
         <p>Une tuque des fêtes :<span>42$</span></p>
         <p>Un chandail laid des fêtes :<span>25$</span></p>
-        <p>Total: 81$</p>
-        </p>
+        <p id="total">Total: 81$</p>
         <p class="col-form-label h3">Destinataire:</p>
         <input id="email" type="text">
         <div>
