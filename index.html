@@ -1,66 +1,80 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Liste interactive de cadeaux de Noël</title>
     <meta name="description" content="Créer votre liste de cadeaux et envoyez-là à vos ami.e.s">
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <script src="script.js" defer></script> <!-- Le javascript est déjà lié. -->
+    <link rel="stylesheet" href="style.css" class="css">
+  </head>
+  
 <!--Commentaire de Swan: hey hoo, travaille plus-->
 
-<div id="top">
-
+  <body>
+    
+    
+    <header>
     <a class="navbar-brand" href="#">L'Atelier du bonheur Mercantile</a>
-    <!--      <p class="nav-item">    -->
-    <p class="nav-item">
+    <!-- <div> -->
+      <p class="nav-item">
         <a class="nav-link active" href="#">Ma liste</a>
-    </p>
-    <p class="nav-item">
+      </p>
+      <p class="nav-item" id="LastLink">
         <a class="nav-link" aria-current="page" href="#">Listes de mes ami.e.s</a>
-    </p>
+      </p>
+    <!--</div>-->
+    </header>
 
-</div>
 
 
-<h3>Ma liste de cadeaux interactive de Phil</h3>
-<p class="text-muted ms-1 mb-3">Ajouter des items à votre liste de cadeaux souhaités puis envoyez votre liste à vos
-    ami.e.s.</p>
-<div id="mid">
-    <div id="pt1">
-        <h4> <!-- class="mb-3"--> Ajouter un item à la liste</h4>
-        <div class="mb-3">
-            <p>Description :</p>
-            <input type="text" id="desc" name="essai" required></input>
-        </div>
-        <div class="mb-4">
-            <span>Valeur estimée ($) :</span><br>
-            <input type="number" id="valeur">
-        </div>
-        <div id="box1" class="d-grid gap-2">
-            <button onclick="ajouter()">Ajouter</button>
-            <br>
-            <button>Annuler</button>
-        </div>
+    <h3 id="GrandTitle">Liste de cadeaux de Phil</h3>
+    
+    <p class="text-muted ms-1 mb-3">Ajouter des items à votre liste de cadeaux souhaités puis envoyez votre liste à vos
+                                    ami.e.s.</p>
+    
+    
+    
+    
+    <div class="box">
+
+    <div class="sbox1">
+    
+        <h4 class="mb-3">Ajouter un item à la liste</h4>
+    <div class="mb-3">
+      <p>Description :</p>
+      <input type="text" id="desc" name="essai" required></input>
     </div>
-    <div id="pt2">
-        <h3>Ma liste</h3>
-         <p class="list"  id="maListe">
-        <p>Crocs des fêtes : <span>14$</span></p>
-        <p>Une tuque des fêtes :<span>42$</span></p>
-        <p>Un chandail laid des fêtes :<span>25$</span></p>
-        <p id="total">Total: 81$</p>
-        <p class="col-form-label h3">Destinataire:</p>
-        <input id="email" type="text">
-        <div>
-            <button>Confirmer et envoyer</button>
-            <button>Recommencer</button>
-
-        </div>
+    <div class="mb-4">
+      <span>Valeur estimée ($) :</span><br>
+      <input type="number" id="valeur">
     </div>
-</div>
+    
+    <div class="d-grid gap-2">
+      <button onclick="ajouter()">Ajouter</button>  <!-- Cliquer sur le bouton va appeler la fonction ajouter. -->
+      <br>
+      <button>Annuler</button>
+    </div>
+    
+    </div>
+
+    <div class="sbox2">
+    <h3>Ma liste</h3>
+    <p class="list" id="maListe">
+      <p>Crocs des fêtes : <span>14$</span></p>
+      <p>Une tuque des fêtes :<span>42$</span></p>
+      <p>Un chandail laid des fêtes :<span>25$</span></p>
+      <p>Total: 81$</p>
+    <!-- </p> -->
+    <p class="col-form-label h3">Destinataire:</p>
+    <input id="email" type="text">
+    <div>
+      <button>Confirmer et envoyer</button>
+      <button>Recommencer</button>
+    </div>
+    </div>
+  
+    </div>
+
 </body>
 </html>

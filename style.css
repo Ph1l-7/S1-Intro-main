@@ -1,11 +1,15 @@
 * {
     font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
-#top {
-    background-color: lightgray;
-    display: flex;
+header{
+    display:flex;
     flex-direction: row;
+    background-color:whitesmoke;
+    height:50px;
+    margin-bottom:30px;
 }
 
 .navbar-brand {
@@ -16,54 +20,85 @@
     font-weight: bold;
 }
 
-.nav-link {
+.nav-item{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left:50px;
+}
+
+.nav-item a{
     text-decoration: none;
     color: black;
-    margin-left: 25px;
 }
 
-h3 {
-    font-size: 35px;
+#LastLink a{
+    opacity: 0.5;
 }
 
-h4 {
-    font-size: 24px;
+#GrandTitle {
+    font-size:48px;
+    margin-bottom:10px;
 }
 
-#mid {
-    display: flex;
+.text-muted{
+    opacity: 0.8;
+    margin-bottom:25px;
 }
 
-#pt2 {
+.box{
+    display:Flex;
+}
+
+.sbox1 h4{
+font-size:32px;
+margin-bottom:20px;
+}
+
+.mb-3 p{
+    margin-bottom:8px;
+}
+
+.mb-3 input{
+    margin-bottom:16px;
+}
+
+.mb-4 p{
+    margin-bottom:8px;
+}
+
+.mb-4 input{
+    margin-bottom:16px;
+}
+
+
+
+
+
+
+
+
+.sbox2 {
     margin-left: 200px;
 }
 
-.mb-3 {
-    margin-bottom: 30px;
+.sbox2 span{
+    float:right;
+    background-color:green;
+    border-radius: 5px;
+    margin-right:5px;
 }
 
-.mb-4 {
-    margin-bottom: 30px;
-}
-
-#pt2 p {
+.sbox2 p {
     border:solid lightgrey 2px;
     margin:0;
 }
 
-#pt2 p:nth-child(6) {
+.sbox2 p:nth-child(6) {
     text-align:right;
-
-}
-#pt2 #total{
     border-width: 0;
-}
-#pt2 .col-form-label{
-border-width: 0;
+
 }
 
-span{
-    float:right;
-    background-color:green;
-    border-radius: 5px;
+.sbox2 p:nth-child(7){
+    border-width: 0;
 }
