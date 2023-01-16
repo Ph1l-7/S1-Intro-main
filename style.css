@@ -84,21 +84,23 @@ margin-bottom:20px;
 .sbox2 span{
     float:right;
     background-color:green;
+    color:White;
     border-radius: 5px;
     margin-right:5px;
 }
 
-.sbox2 p {
+.sbox2 #maListe {
     border:solid lightgrey 2px;
     margin:0;
 }
 
-.sbox2 p:nth-child(6) {
+#other {
     text-align:right;
-    border-width: 0;
-
 }
-
-.sbox2 p:nth-child(7){
-    border-width: 0;
+#other{
+    unicode-bidi:bidi-override;
+    direction:rtl;
+}
+#other:first-letter{
+        color: blue;
 }
