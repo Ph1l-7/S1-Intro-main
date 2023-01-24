@@ -102,5 +102,7 @@ margin-bottom:20px;
     direction:rtl;
 }
 #other:first-letter{
-        color: blue;
+    background-color:green;
+    border-radius: 5px;
+    color:White;
 }
